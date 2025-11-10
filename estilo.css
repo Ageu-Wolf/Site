@@ -1,0 +1,234 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER - TOPO */
+.header-topo {
+    background: linear-gradient(135deg, #1f2833, #0b0c0e); /* Fundo escuro premium */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff4136; /* Linha de urgência */
+}
+
+.header-topo h1 {
+    font-size: 2.5em;
+    color: #ff4136; /* Cor de alerta */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.header-topo h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.slogan {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* URGÊNCIA (CRONÔMETRO) */
+.urgencia-bloco {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.cronometro-display {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #00ff7f; /* Verde neon para destaque */
+    letter-spacing: 2px;
+}
+
+/* BOTÃO PRINCIPAL (CTA) */
+.cta-principal-btn {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 18px 20px;
+    background-color: #ff4136; /* Vermelho/Laranja apelativo */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(255, 65, 54, 0.4);
+}
+
+.cta-principal-btn:hover {
+    background-color: #e63229;
+}
+
+/* SEÇÃO PRODUTOS */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-secao-vendas {
+    font-size: 2em;
+    color: #1f2833;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ff4136;
+    padding-bottom: 10px;
+}
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.media-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.info-produto {
+    padding: 20px;
+}
+
+.info-produto h4 {
+    font-size: 1.5em;
+    color: #1f2833;
+    margin-bottom: 10px;
+}
+
+.info-produto p {
+    margin-bottom: 15px;
+}
+
+.preco-oferta {
+    font-size: 1.4em;
+    color: #ff4136;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.nota-estoque {
+    display: block;
+    color: #ff4136;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* BOTÃO DE COMPRA DO PRODUTO */
+.btn-comprar {
+    display: block;
+    padding: 15px;
+    background-color: #2ecc40; /* Verde de Conversão */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(46, 204, 64, 0.4);
+    margin-top: 15px;
+}
+
+.btn-comprar:hover {
+    background-color: #24a833;
+}
+
+/* SEÇÃO SEGURANÇA */
+.secao-seguranca {
+    background-color: #e6e6fa; /* Lavanda suave */
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.titulo-seguranca {
+    font-size: 1.6em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.btn-confirmacao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-confirmacao:hover {
+    background-color: #0056b3;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1f2833;
+    color: #eee;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-links a {
+    color: #00ff7f;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.contato-whatsapp {
+    margin: 10px 0;
+}
+
+/* RESPONSIVIDADE PARA TELAS MAIORES */
+@media (min-width: 768px) {
+    .card-produto {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .media-container, .info-produto {
+        flex: 1;
+        padding: 30px;
+    }
+
+    .media-container img {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
